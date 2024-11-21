@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Imverso E.I.R.L</title>
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/imverso-logo1.ico" type="image/x-icon">
+
+  <!-- Link Bootstrap's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts ================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- script ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+
+  <!-- nav bar start  -->
+  <header id="nav" class="site-header position-fixed text-white" style="background-color: #447434;">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
+
+      <div class="container ">
+
+        <a class="navbar-brand" href="./index.html"><img src="images/imverso-logo1.png" alt="image" width="280" height="80"></a>
+
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon
+            name="menu-outline" style="font-size: 30px;"></ion-icon></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link active me-md-4" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#about-us">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-md-4" href="#help">Contacto</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- billboard start  -->
+  <section id="billboard">
+    <div class="container ">
+      <div class="row flex-lg-row-reverse align-items-center ">
+
+        <div class="col-lg-6">
+          <nav class="navbar navbar-expand-lg billboard-nav">
+            <div class="container billboard-search p-0">       
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feature start -->
+  <section id="feature" class="py-5 position-relative overflow-hidden" style="background: linear-gradient(270deg, #325626 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <video class="position-absolute top-0 start-0 w-100 h-100" autoplay muted loop playsinline
+        loading="lazy" style="object-fit: cover; filter: grayscale(2) brightness(0.3);">
+        <source src="videos/panoramapuno.mp4" type="video/mp4">
+        Tu navegador no admite la reproducción de videos.
+    </video>
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="section-header mb-5">
+                    <h2 class="text-capitalize m-0 text-white">Transformamos tu talento y tu negocio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="feature-text text-white">
+                    Brindamos soluciones en consultoría y capacitación para llevar tu empresa al siguiente nivel.<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <section id="servicios" style="background: linear-gradient(270deg, #325626 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container">
+      <br><br>
+      <h2 class="text-capitalize text-center py-lg-5">Nuestros Servicios</h2>
+    
+      <div class="row py-lg-5">
+        <!-- Primera columna -->
+        <div class="text-center col-lg-6">
+          <img src="images/ejemploconsultoria.png" alt="image" width="250" height="250" style="margin:0 auto;border-radius:  50%; display: block; object-fit:cover;object-position: center;">
+          <br>
+          <h4 class="fw-bold">Consultoría</h4>
+          <p>Identificamos oportunidades y desarrollamos estrategias personalizadas para optimizar tu negocio.</p>
+          <a href="#consultoria" class="btn btn-primary mt-3">Más Información</a> <br><br>
+        </div>
+    
+        <!-- Segunda columna -->
+        <div class="text-center col-lg-6">
+          <img src="images/ejemplocapacitacion.png" alt="image" width="250" height="250" style="margin:0 auto;border-radius:  50%; display: block; object-fit:cover;object-position: center;">
+          <br>
+          <h4 class="fw-bold">Capacitación</h4>
+          <p>Impartimos talleres y programas formativos diseñados para mejorar las competencias de tu equipo.</p>
+          <a href="#capacitaciones" class="btn btn-primary mt-3">Más Información</a> <br><br>
+        </div>
+      </div>
+    </div>
+    
+
+  </section>
+  
+
+  
+  <!--About us start  -->
+  <section id="about-us" style="background: linear-gradient(270deg, #65AE4D 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container">
+      <div class="row py-lg-5">
+
+        <h2 class="text-capitalize text-center m-0 py-lg-5">Nosotros</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="feature-text">
+              Brindamos soluciones en consultoría y capacitación para llevar tu empresa al siguiente nivel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Consultoria start  -->
+    <section id="consultoria" class="py-5" style="background: linear-gradient(270deg, #325626 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+      <div class="container">
+        <br><br>
+        <!-- Título -->
+        <h2 class="text-capitalize text-center py-4">Consultoría</h2>
+        
+        <!-- Primer bloque -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <img src="images/sistemasgestion.png" class="img-fluid rounded" alt="Sistemas de gestión">
+          </div>
+          <div class="col-md-6">
+            <h3>Sistemas de gestión</h3>
+            <p>
+              Los sistemas de gestión permiten a las empresas mejorar la calidad de sus productos y servicios, proteger el medio ambiente, garantizar la seguridad y salud de sus trabajadores, promover prácticas éticas y prevenir sobornos...
+            </p>
+          </div>
+        </div>
+    
+        <!-- Segundo bloque -->
+        <div class="row align-items-center mb-4 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img src="images/soporteyseguimiento.png" class="img-fluid rounded" alt="Soporte y Seguimiento">
+          </div>
+          <div class="col-md-6">
+            <h3>Soporte y Seguimiento</h3>
+            <p>
+              Ofrecemos diagnósticos empresariales para identificar fortalezas, debilidades y oportunidades de mejora en distintas áreas: situacional, organizacional, estratégica, operativa, integral, de procesos.++++++++++++++++++
+            </p>
+          </div>
+        </div>
+
+        <!-- Tercer bloque -->
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <img src="images/licenciamientoyacreditacion.png" class="img-fluid rounded" alt="Licenciamiento y acreditación">
+          </div>
+          <div class="col-md-6">
+            <h3>Licenciamiento y acreditación</h3>
+            <p>
+              El licenciamiento institucional es obligatorio para todas las universidades y asegura que cumplan con las Condiciones Básicas de Calidad (CBC). Comenzó en 2015, evaluando universidades públicas y privadas para mejorar la organización y enfoque en la educación. La acreditación institucional verifica el cumplimiento de criterios de calidad y procesos internos para garantizar la calidad educativa.
+            </p>
+          </div>
+        </div> 
+
+        <!-- Cuarto bloque -->
+        <div class="row align-items-center mb-4 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img src="images/homologacion.png" class="img-fluid rounded" alt="Homologación">
+          </div>
+          <div class="col-md-6">
+            <h3>Homologación</h3>
+            <p>
+              Es el proceso que examina y confirma la capacidad de los proveedores seleccionados para asegurar que estén debidamente acreditados y sean aptos para colaborar con una organización. También se ofrece asesoría y acompañamiento para garantizar el cumplimiento de los requisitos relacionados con las normativas sanitarias de alimentos exigidos a los proveedores.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+     <!--About us start  -->
+  <section id="capacitaciones" style="background: linear-gradient(270deg, #65AE4D 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container">
+      <div class="row py-lg-5">
+
+        <h2 class="text-capitalize text-center m-0 py-lg-5">Capacitaciones</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="feature-text">
+              Brindamos capacitaciones como estas:
+            </p>
+            <img src="images/ejemplocapacitacion.jpg" width="500" height="590" class="mb-3">
+            <p>Síguenos en: <a href="https://www.facebook.com/INVERSOSAC" target="_blank" rel="noopener noreferrer" class="fs-4">
+              <i class="bi-facebook"></i>
+            </a>
+            para estar informado cuando lanzaremos nuestros programas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+  <!-- Help start  -->
+  <section id="help" class="py-5" style="background: linear-gradient(270deg, #325626 0.01%, rgba(26, 36, 47, 0.00) 100%);">
+    <div class="container-lg my-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <div class="text-center mb-4">
+            <h2 class="text-white">Contáctanos</h2>
+            <p class="text-light">
+              Cuéntanos cómo podemos ayudarte. Completa el formulario y nos pondremos en contacto contigo.
+            </p>
+          </div>
+          <form action="#" method="post" class="bg-dark p-4 rounded">
+            <div class="mb-3">
+              <label for="ruc" class="form-label text-light">RUC</label>
+              <input type="text" id="ruc" name="ruc" class="form-control" placeholder="RUC" required pattern="[0-9]{11}" title="Debe ingresar 11 dígitos numéricos">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Nombre de la empresa</label>
+              <input type="email" id="nombre_empresa" name="nombre_empresa" class="form-control" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label text-light">Número de contacto</label>
+              <input type="text" id="numero_contacto" class="form-control" placeholder="Asunto" required>
+            </div>
+            <div class="mb-3">
+              <label for="servicio" class="form-label text-light">Servicio</label>
+              <select id="servicio" name="servicio" class="form-select" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="Consultoria">Consultoría</option>
+                <option value="Capacitacion">Capacitación</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-light">Tu mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg px-4 me-md-2">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+   <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+   <div class="container">
+    <footer class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+      <div class="col-12 col-md-8 mb-3 mb-md-0 text-center text-md-start">
+        <p class="mb-1">© 2024 Imverso. Todos los derechos reservados.</p>
+        <p class="mb-1">Teléfono: <a href="tel:985483482">+51 985483482</a></p>
+        <p class="mb-0">Correo: <a href="mailto:info@imverso.info">info@imverso.info</a></p>
+      </div>
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <p class="mb-2">Síguenos en:</p>
+        <a href="https://www.facebook.com/INVERSOSAC" target="_blank" rel="noopener noreferrer" class="fs-4 me-2">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  
+  </section>
+
+
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+    <!-- Controlar que solo se ingresen valores numericos en el campo de texto -->
+    <script>
+      const numeroContactoInput = document.getElementById('numero_contacto');
+    
+      numeroContactoInput.addEventListener('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+      });
+    </script>
+
+</body>
+
+</html>
