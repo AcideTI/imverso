@@ -129,3 +129,18 @@
 
 
 })(jQuery);
+
+const whatsappButton = document.querySelector('.whatsapp-float');
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        // Si el usuario baja, ocultar el botón
+        whatsappButton.style.transform = 'translateY(100px)';
+    } else {
+        // Si el usuario sube, mostrar el botón
+        whatsappButton.style.transform = 'translateY(0)';
+    }
+    lastScrollY = window.scrollY;
+});
