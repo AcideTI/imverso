@@ -12,13 +12,13 @@ Version: 1.2
 
 
 :root {
-  --accent-color: #68ae4e;
+  --accent-color: #1AA090;
   /* --secondary-color: #E2EAF1; */
-  --dark-color: #101B0C;
+  --dark-color: #121B25;
   --grey-color: #83898F;
   --body-text-color: #FFFFFF;
   --light-text-color: #D6D6D6;
-  --link-color: #447333;
+  --link-color: #092035;
 }
 
 /** Typography
@@ -722,4 +722,10 @@ iconify-icon.property-icon {
   color: var(--body-text-color);
   font-size: 30px;
 
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-right: 20px;
 }
