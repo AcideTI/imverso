@@ -12,12 +12,13 @@ Version: 1.2
 
 
 :root {
-  --accent-color: #1AA090;
-  /* --secondary-color: #E2EAF1; */
-  --dark-color: #121B25;
+  --accent-color: #68AE4F;
+  
+  --dark-color: #F0F0F0;
+
   --grey-color: #83898F;
-  --body-text-color: #FFFFFF;
-  --light-text-color: #D6D6D6;
+  --body-text-color: #68AE4F;
+  --light-text-color: #000000;
   --link-color: #092035;
 }
 
