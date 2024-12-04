@@ -127,11 +127,11 @@ i:hover {
   --bs-btn-hover-bg: var(--accent-color);
   --bs-btn-hover-border-color: var(--accent-color);
 
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #0bd34d !important; /* Color para la opción seleccionada   */
   --bs-btn-active-bg: var(--accent-color);
   --bs-btn-active-border-color: var(--accent-color);
 
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: #0bd34d;
   --bs-btn-disabled-bg: var(--accent-color);
   --bs-btn-disabled-border-color: var(--accent-color);
 }
@@ -143,7 +143,7 @@ i:hover {
   --bs-btn-hover-bg: var(--accent-color);
   --bs-btn-hover-border-color: var(--accent-color);
   --bs-btn-focus-shadow-rgb: 13, 110, 253;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #0bd34d;
   --bs-btn-active-bg: var(--accent-color);
   --bs-btn-active-border-color: var(--accent-color);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -158,13 +158,13 @@ i:hover {
 .text-white .nav-link.active,
 .text-white .nav-link:focus,
 .text-white .nav-link:hover {
-  color: var(----body-text-color);
+  color: #25d366;
 }
 
 .nav-link.active,
 .nav-link:focus,
 .nav-link:hover {
-  color: var(----body-text-color);
+  color: #68ae4f;
 }
 
 .nav-link {
@@ -172,6 +172,11 @@ i:hover {
   color: var(--light-text-color);
   font-size: 16px;
   position: relative;
+}
+
+.nav-link.active 
+{
+  color: #68ae4f !important; /* Opcion seleccionada Verde */
 }
 
 .nav-link:not(.dropdown-toggle):after {
@@ -365,7 +370,7 @@ p.testimonial-p {
 
 .swiper-button-prev.testimonial-arrow,
 .swiper-button-next.testimonial-arrow {
-  color: #FFFFFF;
+  color: #ffffff;
   --swiper-navigation-size: 30px;
   font-weight: bold;
 }
@@ -397,7 +402,7 @@ section#footer {
 }
 
 .link-primary:hover {
-  color: var(--body-text-color) !important;
+  color: #25d366 !important;
 
 }
 
@@ -770,4 +775,19 @@ iconify-icon.property-icon {
   width: 50%;
   height: 50%;
   object-fit: cover;
+}
+
+/* Nuevas propiedades */
+.hover-success:hover {
+  color: var(--bs-success) !important;
+  transition: color 0.3s ease;
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: var(--bs-success) !important;
 }
