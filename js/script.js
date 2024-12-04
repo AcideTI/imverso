@@ -44,6 +44,7 @@
     });
   });
 
+  /*
   // init Chocolat light box
   var initChocolat = function () {
     Chocolat(document.querySelectorAll('.image-link'), {
@@ -51,7 +52,7 @@
       loop: true,
     })
   }
-
+*/
 
   $(document).ready(function () {
 
@@ -120,7 +121,7 @@
     });
 
 
-    initChocolat();
+    //initChocolat();
 
 
   }); // End of a document
