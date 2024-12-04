@@ -245,16 +245,7 @@ a.nav-link.dropdown-toggle {
   display: flex;
 }
 
-.form-select {
-  border: 1px solid transparent;
-  border-radius: none;
-}
 
-.form-select:focus {
-  border-color: transparent;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem transparent;
-}
 
 .inicio-select {
   border-right: 1px solid #E8E8E8;
@@ -790,4 +781,22 @@ iconify-icon.property-icon {
 .social-icon:hover {
   transform: translateY(-3px);
   color: var(--bs-success) !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    270deg,
+    #1a242f 0.01%,
+    rgba(26, 36, 47, 0) 100%
+  );
+}
+
+@media (max-width: 991px) {
+  .bg-gradient {
+    background: linear-gradient(
+      180deg,
+      #1a242f 0.01%,
+      rgba(26, 36, 47, 0) 100%
+    );
+  }
 }

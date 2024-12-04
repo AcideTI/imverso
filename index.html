@@ -1,355 +1,560 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imverso</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/imverso-logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Link Bootstrap's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Imverso</title>
-  <!-- Favicon -->
-  <link rel="icon" href="images/imverso-logo.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/vendor.css">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <!-- Link Bootstrap's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts ================================================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <!-- script ================================================== -->
-  <script src="js/modernizr.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
+    <!-- Navbar  -->
+    <a href="https://wa.me/+51985483482" class="whatsapp-float" target="_blank">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
 
-
-<body data-bs-spy="scroll" data-bs-target="#navbar-example2" tabindex="0">
-  <!-- Navbar  -->
-  <a href="https://wa.me/+51985483482" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
-
-  <header id="nav" class="site-header position-fixed text-white bg-dark">
-    <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
-      <div class="container ">
-        <a class="navbar-brand" href="./index.html"><img src="images/imverso-logo.png" alt="consultora"
-            class="logo"></a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon
-            name="menu-outline" style="font-size: 30px;"></ion-icon></button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
-          aria-labelledby="offcanvasNavbar2Label">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1 ">
-              <li class="nav-item">
-                <a class="nav-link active me-md-4" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-md-4" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-md-4" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-md-4" href="#contactanos">Contáctanos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- inicio  -->
-  <section id="inicio">
-    <div class="container ">
-      <div class="row flex-lg-row-reverse align-items-center ">
-        <div class="col-lg-6">
-          <img src="images/inicio.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-            height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-          <h1 class=" text-capitalize  lh-1 my-3">Transformamos tu negocio</h1>
-          <p class="lead">Brindamos soluciones en consultoría y capacitación para llevar tu empresa al siguiebnte nivel.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sobre Nosotros  -->
-  <section id="nosotros">
-    <div class="container">
-      <div class="row py-lg-5">
-        <h2 class="text-capitalize text-center m-0 py-lg-5">¿Por qué nosotros?</h2>
-        <div class="text-center mb-5">
-          <p>En Imverso, somos especialistas en ayudar a organizaciones de todos los sectores a implementar y mejorar sus sistemas de gestión para alcanzar estándares internacionales de calidad, seguridad, y sostenibilidad. Ofrecemos un enfoque personalizado y estratégico para garantizar el éxito de cada proyecto.</p>
-        </div>
-        <div class="text-center col-lg-4">
-          <img src="images/cooperacion.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
-            height="140" loading="lazy">
-          <h4 class="fw-normal mt-5 ">Acompañamiento Continuo</h4>
-          <p>Te brindamos soporte integral en cada etapa del proceso, desde el diagnóstico inicial hasta la implementación y mantenimiento del sistema de gestión. Nuestro equipo está comprometido a resolver tus dudas y garantizar el éxito de tu proyecto con un enfoque personalizado y cercano.</p>
-        </div>
-
-        <div class="text-center col-lg-4">
-          <img src="images/logro.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
-            height="140" loading="lazy">
-          <h4 class="fw-normal mt-5">Empresa Certificada</h4>
-          <p>Contamos con la experiencia y respaldo de una empresa certificada en estándares internacionales, lo que nos permite garantizar un servicio de alta calidad y alineado con las mejores prácticas del mercado. Nuestra certificación es tu garantía de confianza.</p>
-        </div>
-
-        <div class="text-center col-lg-4">
-          <img src="images/rapidez.png" class="bd-placeholder-img rounded-circle" alt="Bootstrap Themes" width="140"
-            height="140" loading="lazy">
-          <h4 class="fw-normal mt-5 ">Tiempo de Implementación</h4>
-          <p>Optimizamos los procesos de implementación para que tu organización alcance sus objetivos en el menor tiempo posible, sin comprometer la calidad. Nuestra metodología eficiente asegura resultados rápidos y efectivos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios  -->
-  <section id="servicios">
-    <div class="container py-5">
-      <div class="row">
-        <div class="section-header align-center mb-5">
-          <h2 class="text-capitalize text-center m-0 py-lg-5">Nuestros Servicios</h2>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-between">
-        <div class="col-md-2 principales-servicios">
-          <div class="my-3" role="group"><img alt="image" src="images/iso-9001.webp"></div>
-        </div>
-        <div class="col-md-2 principales-servicios">
-          <div class="my-3" role="group"><img alt="image" src="images/iso-14001.png"></div>
-        </div>
-        <div class="col-md-2 principales-servicios">
-          <div class="my-3" role="group"><img alt="image" src="images/iso-21001.png"></div>
-        </div>
-        <div class="col-md-2 principales-servicios">
-          <div class="my-3" role="group"><img alt="image" src="images/iso-45001.png"></div>
-        </div>
-        <div class="col-md-2 principales-servicios">
-          <div class="my-3" role="group"><img alt="image" src="images/bpm.png"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Residence start  -->
-  <section id="residence">
-    <div class="container  my-5 py-5">
-      <h2 class="text-capitalize text-center m-0 py-lg-5">Algunos Clientes</h2>
-      <div class="swiper-button-next residence-swiper-next  residence-arrow"></div>
-      <div class="swiper-button-prev residence-swiper-prev residence-arrow"></div>
-      <div class="swiper residence-swiper">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/buen-pastor.png" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Colegio Buen pastor</h5>
-                </a>
-                <p class="card-text">Puno, Perú</p>
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/facebook.svg"></li>
-                    <li class="residence-list"> <img src="images/instagram.svg"></li>
-                    <li class="residence-list"> <img src="images/tiktok.svg"></li>
-                  </ul>
-                </div>
-              </div>
+    <header
+      id="nav"
+      class="site-header position-fixed text-white"
+      style="background-color: #ffffff"
+    >
+      <nav id="navbar-example2" class="navbar navbar-expand-lg py-2">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="images/imverso-logo.png" alt="consultora" class="logo"
+          /></a>
+          <button
+            class="navbar-toggler text-black"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <ion-icon name="menu-outline" style="font-size: 30px"></ion-icon>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="color: black !important"
+              ></button>
             </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/rural-alianza.jpg" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Rural Alianza</h5>
-                </a>
-                <p class="card-text">Puno, Perú</p>
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/facebook.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/instagram.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/tiktok.svg" href="image"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/cramer.png" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Colegio Cramer</h5>
-                </a>
-                <p class="card-text">Puno, Perú</p>
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/facebook.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/instagram.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/tiktok.svg" href="image"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/qalasaya.png" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Hotel Qalasaya</h5>
-                </a>
-                <p class="card-text">Puno, Perú</p>
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/facebook.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/instagram.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/tiktok.svg" href="image"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card">
-              <a href="index.html"><img src="images/colver.jpg" class="card-img-top" alt="image"></a>
-              <div class="card-body p-0">
-                <a href="index.html">
-                  <h5 class="card-title pt-4">Colegio Colver</h5>
-                </a>
-                <p class="card-text">Puno, Perú</p>
-                <div class="card-text">
-                  <ul class="d-flex">
-                    <li class="residence-list"> <img src="images/facebook.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/instagram.svg" href="image"></li>
-                    <li class="residence-list"> <img src="images/tiktok.svg" href="image"></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active me-md-4" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-md-4" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-md-4" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-md-4" href="#contactanos"
+                    >Contáctanos</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </nav>
+    </header>
 
-  <!-- Contáctanos  -->
-  <section id="contactanos" class="py-5"
-    style="background: linear-gradient(270deg, #1A242F 0.01%, rgba(26, 36, 47, 0.00) 100%);">
-    <div class="container-lg my-5">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-md-6">
-          <div class="image-holder d-flex">
-            <img src="images/group.png" class="img-fluid" alt="Bootstrap Themes" loading="lazy">
+    <section id="inicio" class="py-5 my-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Imagen -->
+          <div class="col-lg-6 order-lg-2 d-grid">
+            <br />
+            <img
+              src="images/inicio.jpg"
+              class="img-fluid rounded shadow-lg"
+              alt="Transformando negocios"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <!-- Encabezado y texto inicial -->
+          <div class="col-lg-6 order-lg-1">
+            <h1 class="display-4 fw-bold mb-3">Transformamos tu negocio</h1>
+            <p class="lead mb-4">
+              Brindamos soluciones en consultoría y capacitación para llevar tu
+              empresa al siguiente nivel.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#servicios" class="btn btn-primary btn-lg px-4 me-md-2"
+                >Nuestros servicios</a
+              >
+              <a
+                href="#contactanos"
+                class="btn btn-outline-secondary btn-lg px-4"
+                >Contáctanos</a
+              >
+            </div>
           </div>
         </div>
-
-        <div class="col-md-6">
-          <div class="text-content ps-md-5 mt-4 mt-md-0">
-            <h2 class="text-capitalize">Impulsamos a las pequeñas y medianas empresas</h2>
-            <p>Creemos en el poder transformador de las pequeñas y medianas empresas. Nuestro objetivo es ser el socio estratégico que necesitas para alcanzar tus metas, optimizar tus procesos y llevar tu negocio al siguiente nivel. ¿Estás listo para llevar tu empresa a nuevos horizontes? Déjanos ser parte de tu crecimiento. Contáctanos hoy y descubre cómo podemos ayudarte a construir un futuro más próspero para tu negocio.</p>
-            <a class="btn btn-primary btn-lg px-4 me-md-2" href="#" data-bs-toggle="modal"
-              data-bs-target="#modalContactanos">Contáctanos</a>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="modalContactanos" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="tabs-listing mt-4">
-                    <nav>
-                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
-                        <button class="btn btn-outline-primary text-uppercase me-3 active" id="nav-sign-in-tab"
-                          data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab"
-                          aria-controls="nav-sign-in" aria-selected="true">Log In</button>
-                        <button class="btn btn-outline-primary text-uppercase" id="nav-register-tab"
-                          data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab"
-                          aria-controls="nav-register" aria-selected="false">Sign Up</button>
-                      </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel"
-                        aria-labelledby="nav-sign-in-tab">
-                        <form id="form1" class="form-group flex-wrap p-3 ">
-                          <div class="form-input col-lg-12 my-4">
-                            <label for="exampleInputEmail1"
-                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                              Address</label>
-                            <input type="text" id="exampleInputEmail1" name="email" placeholder="Email"
-                              class="form-control ps-3">
-                          </div>
-                          <div class="form-input col-lg-12 my-4">
-                            <label for="inputPassword1"
-                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
-                            <input type="password" id="inputPassword1" placeholder="Password" class="form-control ps-3"
-                              aria-describedby="passwordHelpBlock">
-                            <div id="passwordHelpBlock" class="form-text text-center">
-                              <a href="#" class=" password">Forgot Password ?</a>
-                            </div>
-
-                          </div>
-                          <label class="py-3">
-                            <input type="checkbox" required="" class="d-inline">
-                            <span class="label-body text-black">Remember Me</span>
-                          </label>
-                          <div class="d-grid my-3">
-                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
-                              In</button>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
-                        <form id="form2" class="form-group flex-wrap p-3 ">
-                          <div class="form-input col-lg-12 my-4">
-                            <label for="exampleInputEmail2"
-                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                              Address</label>
-                            <input type="text" id="exampleInputEmail2" name="email" placeholder="Email"
-                              class="form-control ps-3">
-                          </div>
-                          <div class="form-input col-lg-12 my-4">
-                            <label for="inputPassword2"
-                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
-                            <input type="password" id="inputPassword2" placeholder="Password" class="form-control ps-3"
-                              aria-describedby="passwordHelpBlock">
-                          </div>
-                          <label class="py-3">
-                            <input type="checkbox" required="" class="d-inline">
-                            <span class="label-body text-black">I agree to the <a href="#"
-                                class="text-black password border-bottom">Privacy Policy</a>
-                            </span>
-                          </label>
-                          <div class="d-grid my-3">
-                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
-                              Up</button>
-                          </div>
-                        </form>
+        <div class="row mt-5">
+          <div class="col-12">
+            <h2 class="fw-bold text-center mb-4">EN IMVERSO EIRL</h2>
+            <p class="text-center mb-4">
+              Somos una empresa especializada en Consultoría, asistencia
+              técnica, asesoría empresarial y capacitación, reconocida en la
+              zona sur del país. Nuestro equipo de profesionales aporta
+              soluciones estratégicas, organizativas y de impulso comercial para
+              mejorar el control y la rentabilidad de micro, pequeñas y grandes
+              empresas.
+            </p>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <h3 class="fw-bold text-center mb-3">Nuestros pilares</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4 class="card-title fw-bold mb-3">Experiencia</h4>
+                        <p class="card-text">
+                          Más de 10 años en diversos sectores y áreas de negocio
+                          de pequeñas, medianas y grandes empresas.
+                        </p>
                       </div>
                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4 class="card-title fw-bold mb-3">Versatilidad</h4>
+                        <p class="card-text">
+                          Adaptación continua al mercado, flexibilidad e
+                          inmediatez para anticiparnos a tus necesidades.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4 class="card-title fw-bold mb-3">Técnica</h4>
+                        <p class="card-text">
+                          Resolvemos problemas diarios y ayudamos a alcanzar
+                          objetivos, convirtiendo proyectos en realidad.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h4 class="card-title fw-bold mb-3">
+                          Confidencialidad
+                        </h4>
+                        <p class="card-text">
+                          Valoramos la confianza depositada y entendemos la
+                          responsabilidad que implica.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <h3 class="fw-bold mb-3">Proyectos Sociales & Empresariales</h3>
+              <p>
+                Elaboramos proyectos empresariales y sociales, incluyendo etapas
+                de pre-inversión con diagnóstico preliminar, formulación del
+                proyecto y evaluación de factibilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros  -->
+    <section id="nosotros" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h2 class="display-4 fw-bold mb-4">¿QUIÉNES SOMOS?</h2>
+            <p class="lead">
+              Somos una empresa dedicada a crear soluciones rápidas y efectivas
+              para las necesidades empresariales, ofreciendo la mejor calidad,
+              respuesta, cooperación, ética profesional e innovación del
+              mercado.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="images/cooperacion.png"
+                  class="rounded-circle mb-4"
+                  alt="Acompañamiento Continuo"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title fw-bold mb-3">Acompañamiento Continuo</h4>
+                <p class="card-text">
+                  Te brindamos soporte integral en cada etapa del proceso, desde
+                  el diagnóstico inicial hasta la implementación y mantenimiento
+                  del sistema de gestión. Nuestro equipo está comprometido a
+                  resolver tus dudas y garantizar el éxito de tu proyecto con un
+                  enfoque personalizado y cercano.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="images/logro.png"
+                  class="rounded-circle mb-4"
+                  alt="Empresa Certificada"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title fw-bold mb-3">Empresa Certificada</h4>
+                <p class="card-text">
+                  Contamos con la experiencia y respaldo de una empresa
+                  certificada en estándares internacionales, lo que nos permite
+                  garantizar un servicio de alta calidad y alineado con las
+                  mejores prácticas del mercado. Nuestra certificación es tu
+                  garantía de confianza.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img
+                  src="images/rapidez.png"
+                  class="rounded-circle mb-4"
+                  alt="Tiempo de Implementación"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title fw-bold mb-3">
+                  Tiempo de Implementación
+                </h4>
+                <p class="card-text">
+                  Optimizamos los procesos de implementación para que tu
+                  organización alcance sus objetivos en el menor tiempo posible,
+                  sin comprometer la calidad. Nuestra metodología eficiente
+                  asegura resultados rápidos y efectivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios  -->
+    <section id="servicios" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+
+        <!-- Asesoría Section -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Asesoría</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Implementación de Herramientas de Gestión
+                    </h5>
+                    <p class="card-text">
+                      Brindamos asesoría para la implementación de herramientas
+                      de gestión que optimizan procesos y mejoran la
+                      competitividad de las empresas. Nos enfocamos en
+                      soluciones personalizadas para cada organización.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">5S KAISEN</h5>
+                    <p class="card-text">
+                      La metodología 5S KAISEN es una herramienta para la mejora
+                      continua de la productividad, enfocada en la optimización
+                      del lugar de trabajo. Ayudamos a implementar estos
+                      principios para que tu empresa sea más eficiente y
+                      organizada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Lean Manufacturing</h5>
+                    <p class="card-text">
+                      Ayudamos a implementar principios de Lean Manufacturing
+                      para la reducción de desperdicios y la mejora de la
+                      eficiencia en los procesos productivos de tu empresa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Six Sigma</h5>
+                    <p class="card-text">
+                      Con Six Sigma, buscamos reducir la variabilidad en los
+                      procesos y aumentar la calidad de los productos,
+                      implementando una metodología de mejora continua basada en
+                      datos y análisis rigurosos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Planes de Negocios</h5>
+                    <p class="card-text">
+                      Te apoyamos en la elaboración de planes de negocio
+                      estratégicos que ayuden a definir los objetivos y pasos
+                      necesarios para alcanzar el éxito a largo plazo de tu
+                      empresa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">I+D+E</h5>
+                    <p class="card-text">
+                      Nos especializamos en ofrecer soluciones innovadoras en
+                      Investigación, Desarrollo y Evaluación para mejorar
+                      productos y servicios, impulsando el crecimiento
+                      sostenible de tu empresa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultoría Section -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Consultoría</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Sistemas de Gestión</h5>
+                    <div class="row row-cols-3 row-cols-sm-5 g-2 mb-3">
+                      <div class="col">
+                        <img
+                          src="images/iso-9001.webp"
+                          alt="ISO 9001"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="images/iso-14001.png"
+                          alt="ISO 14001"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="images/iso-21001.png"
+                          alt="ISO 21001"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col">
+                        <img
+                          src="images/iso-45001.png"
+                          alt="ISO 45001"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col">
+                        <img src="images/bpm.png" alt="BPM" class="img-fluid" />
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      Brindamos asesoría en la implementación y mejora de
+                      sistemas de gestión de calidad, medio ambiente, seguridad,
+                      entre otros. Nuestro objetivo es que tu empresa cumpla con
+                      los estándares internacionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Soporte y Seguimiento</h5>
+                    <p class="card-text">
+                      Ofrecemos soporte continuo a las empresas para asegurar
+                      que las soluciones implementadas sean efectivas a largo
+                      plazo, con seguimiento y ajustes necesarios para la mejora
+                      continua.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Licenciamiento y Acreditación</h5>
+                    <p class="card-text">
+                      Gestionamos el proceso de licenciamiento y acreditación
+                      para que tu empresa cumpla con los requisitos legales y
+                      normativos que exige el sector en el que opera.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Homologación</h5>
+                    <p class="card-text">
+                      Te ayudamos a homologar productos y servicios,
+                      garantizando su cumplimiento con las normativas
+                      internacionales, lo que facilita su acceso a mercados más
+                      amplios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capacitación Section -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Capacitación</h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Empresarial</h5>
+                    <p class="card-text">
+                      Ofrecemos formación a empresas sobre gestión, liderazgo,
+                      calidad y eficiencia, con programas personalizados que se
+                      adaptan a las necesidades específicas de cada
+                      organización.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Certificación Técnica</h5>
+                    <p class="card-text">
+                      Proveemos cursos y programas de certificación técnica para
+                      profesionales, ayudando a fortalecer las competencias y
+                      habilidades requeridas en los diferentes sectores
+                      industriales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Cursos Virtuales</h5>
+                    <p class="card-text">
+                      Contamos con una amplia oferta de cursos virtuales,
+                      ideales para la formación continua, que permiten a tus
+                      empleados capacitarse desde cualquier lugar y en su propio
+                      tiempo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Cursos a la Medida de la Necesidad Empresarial
+                    </h5>
+                    <p class="card-text">
+                      Desarrollamos programas de capacitación personalizados,
+                      adaptados a las necesidades específicas de tu empresa para
+                      garantizar que los contenidos sean relevantes y efectivos.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -357,45 +562,488 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer start  -->
-  <section id="footer">
-    <div class="container footer-container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5  ">
-        <div class=" col-md-4">
-          <h3><img src="images/imverso-logo.png" alt="image"></h3>
-          <p>Imverso E.I.R.L.</p>
-          <p>Teléfono: +51 985483482</p>
-          <p>Correo: info@imverso.info</p>
-          <i class="bi-facebook pe-4"></i>
-          <i class="bi-instagram pe-4"></i>
-          <i class="bi-twitter pe-4"></i>
-          <i class="bi-youtube pe-4"></i>
+    <!-- Residence start  -->
+    <section id="residence" class="py-5">
+      <div class="container my-5">
+        <h2 class="text-capitalize text-center m-0 py-lg-5">
+          Algunos Clientes
+        </h2>
+        <br />
+        <!-- Controles del carrusel -->
+        <div class="swiper-button-next residence-swiper-next residence-arrow"></div>
+        <div class="swiper-button-prev residence-swiper-prev residence-arrow"></div>
+        <div class="swiper residence-swiper">
+          <div class="swiper-wrapper">
+            <!-- Tarjeta 1 -->
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img
+                  src="images/buen-pastor.jpeg"
+                  class="card-img-top img-fluid rounded"
+                  alt="Colegio Buen Pastor"
+                  loading="lazy"
+                  style="height: 200px !important; object-fit: cover !important; border-radius: 15px !important;"
+                />
+                <div class="card-body d-flex flex-column p-0">
+                  <h5 class="card-title pt-4">Colegio Buen Pastor</h5>
+                  <p class="card-text">Puno, Perú</p>
+                  <div class="mt-auto">
+                    <ul class="d-flex list-inline">
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Facebook">
+                          <img src="images/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Instagram">
+                          <img src="images/instagram.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="TikTok">
+                          <img src="images/tiktok.svg" alt="TikTok" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img
+                  src="images/rural-alianza.jpg"
+                  class="card-img-top img-fluid rounded"
+                  alt="Rural Alianza"
+                  loading="lazy"
+                  style="height: 200px !important; object-fit: cover !important; border-radius: 15px !important;"
+                />
+                <div class="card-body d-flex flex-column p-0">
+                  <h5 class="card-title pt-4">Rural Alianza</h5>
+                  <p class="card-text">Puno, Perú</p>
+                  <div class="mt-auto">
+                    <ul class="d-flex list-inline">
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Facebook">
+                          <img src="images/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Instagram">
+                          <img src="images/instagram.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="TikTok">
+                          <img src="images/tiktok.svg" alt="TikTok" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img
+                  src="images/cramer.png"
+                  class="card-img-top img-fluid rounded"
+                  alt="Colegio Cramer"
+                  loading="lazy"
+                  style="height: 200px !important; object-fit: cover !important; border-radius: 15px !important;"
+                />
+                <div class="card-body d-flex flex-column p-0">
+                  <h5 class="card-title pt-4">Colegio Cramer</h5>
+                  <p class="card-text">Puno, Perú</p>
+                  <div class="mt-auto">
+                    <ul class="d-flex list-inline">
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Facebook">
+                          <img src="images/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Instagram">
+                          <img src="images/instagram.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="TikTok">
+                          <img src="images/tiktok.svg" alt="TikTok" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img
+                  src="images/qalasaya.png"
+                  class="card-img-top img-fluid rounded"
+                  alt="Hotel Qalasaya"
+                  loading="lazy"
+                  style="height: 200px !important; object-fit: cover !important; border-radius: 15px !important;"
+                />
+                <div class="card-body d-flex flex-column p-0">
+                  <h5 class="card-title pt-4">Hotel Qalasaya</h5>
+                  <p class="card-text">Puno, Perú</p>
+                  <div class="mt-auto">
+                    <ul class="d-flex list-inline">
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Facebook">
+                          <img src="images/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Instagram">
+                          <img src="images/instagram.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="TikTok">
+                          <img src="images/tiktok.svg" alt="TikTok" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img
+                  src="images/colver.jpg"
+                  class="card-img-top img-fluid rounded"
+                  alt="Colegio Colver"
+                  loading="lazy"
+                  style="height: 200px !important; object-fit: cover !important; border-radius: 15px !important;"
+                />
+                <div class="card-body d-flex flex-column p-0">
+                  <h5 class="card-title pt-4">Colegio Colver</h5>
+                  <p class="card-text">Puno, Perú</p>
+                  <div class="mt-auto">
+                    <ul class="d-flex list-inline">
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Facebook">
+                          <img src="images/facebook.svg" alt="Facebook" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="Instagram">
+                          <img src="images/instagram.svg" alt="Instagram" />
+                        </a>
+                      </li>
+                      <li class="residence-list list-inline-item">
+                        <a href="#" aria-label="TikTok">
+                          <img src="images/tiktok.svg" alt="TikTok" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contáctanos  -->
+    <section id="contactanos" class="py-5 bg-gradient">
+      <div class="container my-5">
+        <div class="row justify-content-between align-items-center gy-4">
+          <div class="col-lg-6">
+            <div class="image-holder text-center text-lg-start">
+              <img
+                src="images/group.png"
+                class="img-fluid rounded shadow"
+                alt="Equipo de trabajo"
+                loading="lazy"
+                width="540"
+                height="360"
+              />
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="text-content">
+              <h2 class="text-capitalize mb-4 fs-1 fw-bold">
+                Impulsamos a las pequeñas y medianas empresas
+              </h2>
+              <p class="mb-4 lead">
+                Creemos en el poder transformador de las pequeñas y medianas
+                empresas. Nuestro objetivo es ser el socio estratégico que
+                necesitas para alcanzar tus metas, optimizar tus procesos y
+                llevar tu negocio al siguiente nivel.
+              </p>
+              <p class="mb-4">
+                ¿Estás listo para llevar tu empresa a nuevos horizontes? Déjanos ser parte de tu
+                crecimiento. Contáctanos hoy y descubre cómo podemos ayudarte a
+                construir un futuro más próspero para tu negocio.
+              </p>
+              <div class="text-center text-lg-start">
+                <a
+                  class="btn btn-primary btn-lg px-4 py-2"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalContactanos"
+                  role="button"
+                >
+                  Contáctanos
+                  <span class="visually-hidden">Abrir formulario de contacto</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalContactanos"
+        tabindex="-1"
+        aria-labelledby="modalContactanosLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-10">
+                    <div class="text-center mb-4">
+                      <h5>
+                        Completa el formulario para ponerte en contacto con
+                        nosotros
+                      </h5>
+                    </div>
+                    <form id="form2">
+                      <div class="mb-3">
+                        <label
+                          for="ruc"
+                          class="form-label fs-6 text-uppercase fw-bold"
+                          >RUC</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="ruc"
+                          placeholder="Ingrese el RUC (11 caracteres)"
+                          pattern="\d{11}"
+                          maxlength="11"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="contactName"
+                          class="form-label fs-6 text-uppercase fw-bold"
+                          >Nombre de Contacto</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="contactName"
+                          placeholder="Ingrese el nombre de contacto"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="contactNumber"
+                          class="form-label fs-6 text-uppercase fw-bold"
+                          >Número de Contacto</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="contactNumber"
+                          placeholder="Ingrese el número de contacto"
+                          pattern="\d*"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="service"
+                          class="form-label fs-6 text-uppercase fw-bold"
+                          >Servicio</label
+                        >
+                        <select class="form-select" id="service" required>
+                          <option value="" selected disabled>
+                            Seleccione un servicio
+                          </option>
+                          <option value="Asesoria">Asesoría</option>
+                          <option value="Consultoria">Consultoría</option>
+                          <option value="Capacitacion">Capacitación</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label
+                          for="message"
+                          class="form-label fs-6 text-uppercase fw-bold"
+                          >Mensaje</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          rows="3"
+                          placeholder="Ingrese su mensaje"
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="d-grid">
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-lg text-uppercase"
+                        >
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start  -->
+    <section id="footer">
+      <footer class="py-5" style="background-color: #ffffff">
+        <!-- Main Footer -->
+        <div class="container">
+          <div class="row g-4">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6">
+              <div class="mb-4">
+                <img
+                  src="images/imverso-logo.png"
+                  alt="Imverso Logo"
+                  class="img-fluid mb-3"
+                  style="max-width: 200px"
+                />
+                <p class="mb-2">Imverso E.I.R.L.</p>
+              </div>
+              <div class="mb-4">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-telephone-fill me-2 text-success"></i>
+                  <a href="tel:+51985483482" class="text-decoration-none"
+                    >+51 985483482</a
+                  >
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope-fill me-2 text-success"></i>
+                  <a
+                    href="mailto:info@imverso.info"
+                    class="text-decoration-none"
+                    >info@imverso.info</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-success mb-3">Enlaces Rápidos</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none hover-success"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none hover-success"
+                    >Servicios</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none hover-success"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none hover-success"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-lg-4 col-md-6">
+              <h5 class="text-success mb-3">Síguenos</h5>
+              <div class="d-flex gap-3">
+                <a href="#" class="fs-4 social-icon" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="fs-4 social-icon" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="fs-4 social-icon" aria-label="Twitter">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="fs-4 social-icon" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container">
+          <hr class="my-4 border-secondary" />
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0 text-black-50">
+                © 2024 Imverso. Todos los derechos reservados
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+              <a
+                href="#"
+                class="text-black-50 text-decoration-none me-3 hover-success"
+                >Términos y Condiciones</a
+              >
+              <a
+                href="#"
+                class="text-black-50 text-decoration-none hover-success"
+                >Política de Privacidad</a
+              >
+            </div>
+          </div>
         </div>
       </footer>
-    </div>
+    </section>
 
-
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 ">
-        <div class="col-md-8 d-flex align-items-center">
-          <p>© 2024 Imverso. Todos los derechos reservados</p>
-        </div>
-      </footer>
-    </div>
-  </section>
-
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
