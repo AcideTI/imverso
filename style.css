@@ -315,8 +315,8 @@ section#residence {
 .swiper-button-next.residence-arrow,
 .swiper-button-prev.residence-arrow {
   background: transparent;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: #68ae4f;
+  border: 1px solid #68ae4f;
   padding: initial;
   width: 50px;
   height: 50px;
@@ -800,3 +800,72 @@ iconify-icon.property-icon {
     );
   }
 }
+
+/* Titulos y otros textos*/
+
+.titulo-principal {
+  font-size: 3rem !important; /* 48px  */
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+.subtitulo-principal {
+  font-size: 1.5625rem !important; /* 25px */
+  font-weight: normal !important; /* Less bold */
+  line-height: 1.3 !important;
+}
+
+.titulo-secundario {
+  font-size: 2rem !important; /* 32px */
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+.subtitulos-tarjetas {
+  font-size: 1.5rem !important; /* 24px */
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+.titulo-menor {
+  font-size: 1.25rem !important; /* 20px */
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+.texto-descriptivo {
+  font-size: 1rem !important; /* 16px */
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  text-align: left; /* Alinea el texto a la izquierda */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+}
+
+.display-4 {
+  font-size: 2.5rem; /* Ajuste más moderado */
+}
+.text-lead {
+  font-size: 1.125rem; /* Lead paragraph */
+  line-height: 1.7;
+}
+
+.swiper-button-prev
+{
+  color: #68ae4f;
+}
+.swiper-button-next
+{
+  color: #68ae4f;
+}
+.swiper-pagination-bullet-active {
+  background: #68ae4f !important; /* Cambia el color del fondo */
+  
+}
+
+.iti {
+  width: 100%;
+  display: block;
+}
+
+
+

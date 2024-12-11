@@ -31,12 +31,9 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    
     <!--- animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- script ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -100,17 +97,13 @@
                 class="navbar-nav align-items-center justify-content-end align-items-center flex-grow-1"
               >
                 <li class="nav-item">
-                  <a class="nav-link active me-md-4" href="index.html"
-                    >Inicio</a
-                  >
+                  <a class="nav-link me-md-4" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-md-4" href="nosotros.html">Nosotros</a>
+                  <a class="nav-link active me-md-4" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-md-4" href="servicios.html"
-                    >Servicios</a
-                  >
+                  <a class="nav-link me-md-4" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-md-4" href="contactanos.html"
@@ -123,111 +116,172 @@
         </div>
       </nav>
     </header>
-    <!-- Primera pantalla inicio -->
-    <section id="inicio">
-      <br>
+    
+    <br><br><br>
+    <!-- Sobre Nosotros  -->
+    <section id="nosotros" class="py-5 bg-light">
       <div class="container">
-        <div class="row align-items-center">
-          <!-- Imagen -->
-          <div class="col-lg-6 order-lg-2 rounded">
-            <img
-              id="primera_imagen"
-              src="images/inicio.jpg"
-              class="img-fluid rounded shadow-lg"
-              alt="Transformando negocios con Imverso"
-              width="700"
-              height="500"
-            />
-          </div>
-          <!-- Encabezado y texto inicial con animación de entrada -->
-          <div
-            class="col-lg-6 order-lg-1 animate__animated animate__fadeInLeft"
-          >
-          <br>
-            <h1 id="titulo_inicial" class="titulo-principal mb-4">
-              Transformamos tu negocio
-            </h1>
-            <p class="subtitulo-principal mb-4">
-              Brindamos soluciones en consultoría y capacitación para llevar tu
-              empresa al siguiente nivel.
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-6 order-lg-1">
+              <h3  class="mb-3 titulo-principal text-center" id="titulo_nosotros">¿QUIÉNES SOMOS?</h3>
+            <p class="subtitulo-principal mb-4 text-center" id="parrafo_nosotros">
+              Somos una empresa dedicada a crear soluciones rápidas y efectivas
+              para las necesidades empresariales, ofreciendo la mejor calidad,
+              respuesta, cooperación, ética profesional e innovación del
+              mercado.
             </p>
-            <div class="d-grid gap-3 d-md-flex justify-content-md-start">
-              <a
-                href="servicios.html"
-                class="btn btn-primary btn-lg px-4 me-md-2 animate__animated animate__bounceIn animate__delay-1s"
-              >
-                Nuestros servicios
-              </a>
-              <a
-                href="#contactanos"
-                class="btn btn-outline-secondary btn-lg px-4 animate__animated animate__bounceIn animate__delay-1s"
-              >
-                Saber más
-              </a>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 animate__animated animate__bounceIn animate__delay-1s">
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+              <div class="card-body text-center">
+                <img
+                  src="images/cooperacion.png"
+                  class="rounded-circle mb-4"
+                  alt="Acompañamiento Continuo"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title subtitulos-tarjetas">Acompañamiento Continuo</h4>
+                <p class="card-text">
+                  Te acompañamos en cada etapa, desde el diagnóstico hasta la implementación y mantenimiento de tu sistema de gestión. Contamos con un equipo comprometido en resolver tus dudas y asegurar el éxito de tu proyecto con atención personalizada.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+              <div class="card-body text-center">
+                <img
+                  src="images/logro.png"
+                  class="rounded-circle mb-4"
+                  alt="Empresa Certificada"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title subtitulos-tarjetas">Empresa Certificada</h4>
+                <p class="card-text">
+                  Somos una empresa certificada en estándares internacionales, lo que garantiza un servicio de alta calidad alineado con las mejores prácticas del mercado. Nuestra certificación es tu garantía de confianza.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+              <div class="card-body text-center">
+                <img
+                  src="images/rapidez.png"
+                  class="rounded-circle mb-4"
+                  alt="Tiempo de Implementación"
+                  width="140"
+                  height="140"
+                  loading="lazy"
+                />
+                <h4 class="card-title subtitulos-tarjetas">Tiempo de Implementación</h4>
+                <p class="card-text">
+                  Optimizamos la implementación para que tu organización logre sus objetivos rápidamente y sin comprometer la calidad, gracias a nuestra metodología eficiente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10">
+            <h3 class="titulo-principal text-center mb-4" id="titulo_pilares">Nuestros pilares</h3>
+            <div id="pilaresCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="carrusel_pilares">
+                <div class="carousel-item active">
+                  <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+                    <div class="card-body p-5">
+                      <h4 class="card-title text-center mb-3 subtitulos-tarjetas">Experiencia</h4>
+                      <p class="card-text text-center">
+                        Más de 10 años en diversos sectores y áreas de negocio de pequeñas, medianas y grandes empresas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+                    <div class="card-body p-5">
+                      <h4 class="card-title text-center mb-3 subtitulos-tarjetas">Versatilidad</h4>
+                      <p class="card-text text-center">
+                        Adaptación continua al mercado, flexibilidad e inmediatez para anticiparnos a tus necesidades.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+                    <div class="card-body p-5">
+                      <h4 class="card-title text-center mb-3 subtitulos-tarjetas">Técnica</h4>
+                      <p class="card-text text-center">
+                        Resolvemos problemas diarios y ayudamos a alcanzar objetivos, convirtiendo proyectos en realidad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card h-100 border-0 shadow-sm" style="background-color:white !important;">
+                    <div class="card-body p-5">
+                      <h4 class="card-title text-center mb-3 subtitulos-tarjetas">Confidencialidad</h4>
+                      <p class="card-text text-center">
+                        Valoramos la confianza depositada y entendemos la responsabilidad que implica.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#pilaresCarousel" data-bs-slide="prev" 
+                  style="background: transparent; color: #68ae4f; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; font-size: 24px; margin-left: 20px; border: none;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="swiper-button-prev"></span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#pilaresCarousel" data-bs-slide="next" 
+                  style="background: transparent; color: #68ae4f; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; font-size: 24px; margin-right: 20px; border: none;">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="swiper-button-next"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="background-color:white !important;">
+          <div class="col-md-10 text-center">
+            <br>
+            <h3 class="mb-4 titulo-principal" id="titulos_proyectos">Proyectos Sociales & Empresariales</h3>
+            <p class="subtitulo-principal mb-4" id="parrafo_proyectos">
+              Elaboramos proyectos empresariales y sociales, incluyendo etapas de pre-inversión con diagnóstico preliminar, formulación del proyecto y evaluación de factibilidad.
+            </p>
+            <br>
+            <img 
+              id="tercera_imagen"
+              src="images/proyectos_sociales_empresariales.png"
+              class="img-fluid rounded shadow-lg"
+              alt="Proyectos sociales y empresariales en Imverso"
+              width="700"
+              height="700"
+            >
+            <br>
+            <br>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Saber más -->
-    <section id="contactanos" class="bg-gradient">
-      <div class="container">
-        <div class="row justify-content-center align-items-center gy-4">
-          <div class="col-lg-6 text-center">
-            <div class="image-holder mb-4 mb-lg-0">
-              <img
-                id="segunda_imagen" 
-                src="images/group.png"
-                class="img-fluid rounded shadow"
-                alt="Contacto con Imverso"
-                width="540"
-                height="360"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="text-content text-center">
-              <h2
-                class="text-capitalize mb-4 fs-1 fw-bold"
-                id="titulo_inicial2"
-              >
-                Impulsamos a las pequeñas y medianas empresas
-              </h2>
-              <p class="subtitulo-principal mb-4" id="subtitulo_inicial">
-                Creemos en el poder transformador de las pequeñas y medianas
-                empresas. Nuestro objetivo es ser el socio estratégico que
-                necesitas para alcanzar tus metas, optimizar tus procesos y
-                llevar tu negocio al siguiente nivel.
-              </p>
-              <p class="subtitulo-principal mb-4" id="subtitulo_inicial2">
-                ¿Estás listo para llevar tu empresa a nuevos horizontes? Déjanos
-                ser parte de tu crecimiento. Contáctanos hoy y descubre cómo
-                podemos ayudarte a construir un futuro más próspero para tu
-                negocio.
-              </p>
-              <div class="text-center">
-                <a
-                  class="btn btn-primary btn-lg px-4 py-2"
-                  href="contactanos.html"
-                  role="button"
-                  id="boton_contactanos"
-                >
-                  Contáctanos
-                  <span class="visually-hidden">Abrir formulario de contacto</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br>
     <!-- Footer start  -->
-    <section id="footer">
-      <footer class="bg-light py-4">
-        <div class="container">
-          <div class="row gy-4">
+    <section id="footer" style="background-color:white !important;">
+      <footer class="bg-light py-4" style="background-color:white !important;">
+        <div class="container" style="background-color:white !important;">
+          <div class="row gy-4" style="background-color:white !important;">
             <!-- Company Info -->
             <div class="col-lg-4 col-md-6">
               <img
