@@ -7,9 +7,9 @@ const sendEmail = async (formData) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          service_id: "service_nswucc5",
-          template_id: "template_38w9odo",
-          user_id: "AcilVb584WuYgAtvG",
+          service_id: "service_vll01bo",
+          template_id: "template_kjnw9si",
+          user_id: "1sEve4zn0ny6aJOvz",
           template_params: formData,
         }),
       });
@@ -116,7 +116,7 @@ const sendEmail = async (formData) => {
         from_name: nameInput.value,
         message: formattedMessage,
         reply_to: "",
-        from_email: "francogt8000@gmail.com",
+        from_email: "inpulsainversiones@gmail.com",
       };
   
       try {
