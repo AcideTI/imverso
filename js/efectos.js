@@ -6,7 +6,7 @@ new WOW().init();
  * @param {string} selector - Selector del elemento al que se aplicará el efecto.
  * @param {number} velocidad - Velocidad en milisegundos entre caracteres.
  */
-function aplicarEfectoTyping(selector, velocidad = 100) {
+function aplicarEfectoTyping(selector, velocidad = 10) {
   const elemento = document.querySelector(selector);
 
   // Verificar si el elemento existe
@@ -37,7 +37,7 @@ function animateSection(sectionId, index) {
   // Configuración inicial
   section.style.opacity = "0";
   section.style.transform = "translateY(20px)";
-  section.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+  section.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
