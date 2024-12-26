@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const titulos_proyectos = document.getElementById("titulos_proyectos");
   const parrafo_proyectos = document.getElementById("parrafo_proyectos");
   const tercera_imagen = document.getElementById("tercera_imagen");
-  const titulo_asesoria = document.getElementById("titulo_asesoria");
+  const seccion_asesoria = document.getElementById("seccion_asesoria");
   const contenido_consultoria = document.getElementById("contenido_consultoria");
   const contenido_capacitacion = document.getElementById("contenido_capacitacion");
   const titulo_clientes = document.getElementById("titulo_clientes");
@@ -125,19 +125,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (tercera_imagen) {
     animateSection("tercera_imagen", 7); // Índice 7 para la imagen
   }
-  if (titulo_asesoria) 
-  {
-    animateSection("titulo_asesoria", 7); // Índice 7 para el título
-    const contenido_asesoria = document.getElementById('contenido_asesoria');
-    contenido_asesoria.classList.add('animate__animated', 'animate__bounceIn', 'animate__delay-1s');
-  }
-  if (contenido_consultoria) 
-  {
-    animateSection("contenido_consultoria", 8); // Índice 8 para el contenido
-  }
+  
   if (contenido_capacitacion) 
     {
-    animateSection("contenido_capacitacion", 9); // Índice 9 para el contenido
+    animateSection("contenido_capacitacion", 7); // Índice 7 para el contenido
   }
   if (titulo_clientes) 
   {
